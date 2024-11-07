@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import Image from "next/image"
+import { useRouter } from "next/router"
 import Meta from "@/components/Meta"
 import Terminal from "@/components/Terminal"
 import "@fontsource/fira-code/400.css"
@@ -8,17 +9,20 @@ import { useSettings } from "@/context/settings"
 import { fetchAsset } from "@/utils/fetchAsset"
 
 export default function Home() {
-	const { settings } = useSettings()
+	const { settings, setSettings } = useSettings()
 	const [wallpaper, setWallpaper] = useState(null)
 	const [isReady, setIsReady] = useState(false)
 	const [isLoaded, setIsLoaded] = useState(false)
+	const router = useRouter();
+	const { query } = router;
 
 	useEffect(() => {
-		const info = `\u00A9 2022-${new Date().getFullYear()} Can Cellek\n\nStart Page designed by Can Cellek\nCheck out the source code at\nhttps://github.com/excalith/excalith-start-page`
-		console.log(info)
-	}, [])
 
-	useEffect(() => {
+		const { configUrl } = query;
+		if (configUrl) {
+			loadSettingsFromUrl(configUrl);
+		}
+
 		if (!settings) return
 
 		// Get variables from config
@@ -82,6 +86,30 @@ export default function Home() {
 
 		setIsReady(true)
 	}, [settings])
+
+
+
+	function loadSettingsFromUrl(url) {
+		console.log(url);
+		fetch(url).then((res) => {
+			if (!res.ok) {
+				appendToLog("File not found on URL", "error")
+				throw Error(message)
+			}
+
+			setSettings(data);
+		})
+			.then((data) => {
+				setSettings(data)
+				appendToLog("Successfully imported configuration file", "success")
+			})
+			.catch((err) => {
+				// appendToLog(err, true)
+			})
+			.finally(() => {
+				setIsLoaded(true)
+			})
+	}
 
 	return (
 		<main className={"transition-all duration-200 ease-in-out"}>

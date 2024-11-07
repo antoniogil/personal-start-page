@@ -1,7 +1,7 @@
 {
-	"username": "Excalith",
+	"username": "Antonio Gil",
 	"theme": {
-		"name": "Default",
+		"name": "Dracula",
 		"backgroundColor": "#121317",
 		"windowColor": "#1e212b",
 		"textColor": "#e2e2e2",
@@ -16,7 +16,7 @@
 		"gray": "#97989d"
 	},
 	"wallpaper": {
-		"url": "assets/default-wallpaper.svg",
+		"url": "assets/wallpaper.jpg",
 		"easing": "ease-in-out",
 		"fadeIn": true,
 		"blur": false
@@ -109,19 +109,14 @@
 	"sections": {
 		"list": [
 			{
-				"title": "General",
+				"title": "Productivity",
 				"color": "green",
 				"align": "left",
 				"links": [
 					{
-						"name": "Portfolio",
-						"url": "https://cancellek.com",
+						"name": "Notion",
+						"url": "https://notion.so",
 						"icon": "mdi:web"
-					},
-					{
-						"name": "Keybase",
-						"url": "https://keybase.io/",
-						"icon": "fa-brands:keybase"
 					},
 					{
 						"name": "GPT",
@@ -129,15 +124,20 @@
 						"icon": "simple-icons:openai"
 					},
 					{
-						"name": "OCI",
-						"url": "https://www.oracle.com/cloud/",
-						"icon": "simple-icons:oracle"
-					}
+						"name": "Learn Microsoft",
+						"url": "https://learn.microsoft.com/",
+						"icon": "simple-icons:microsoft"
+					},
+		  {
+			"name": "Pomodoro",
+			"url": "https://app.pomodorotimer.online",
+			"icon": "mdi:timer"
+		  }
 				]
 			},
 			{
-				"title": "Dev",
-				"color": "magenta",
+				"title": "Hello world!",
+				"color": "black",
 				"align": "left",
 				"links": [
 					{
@@ -146,19 +146,14 @@
 						"icon": "mdi:github"
 					},
 					{
-						"name": "GitLab",
-						"url": "https://gitlab.com",
-						"icon": "ph:gitlab-logo-simple-fill"
-					},
-					{
-						"name": "Dev.to",
-						"url": "https://dev.to",
-						"icon": "material-symbols:logo-dev"
-					},
-					{
 						"name": "Stack Overflow",
 						"url": "https://stackoverflow.com/",
 						"icon": "mdi:stack-overflow"
+					},
+					{
+						"name":"VariableNotFound",
+						"url": "https://variablenotfound.com",
+						"icon": "mdi:web"
 					}
 				]
 			},
@@ -168,14 +163,9 @@
 				"align": "left",
 				"links": [
 					{
-						"name": "Twitter",
-						"url": "https://twitter.com",
-						"icon": "mdi:twitter"
-					},
-					{
-						"name": "Mastodon",
-						"url": "https://mastodon.social/",
-						"icon": "ri:mastodon-fill"
+						"name": "Instragram",
+						"url": "https://instagram.com",
+						"icon": "simple-icons:polywork"
 					},
 					{
 						"name": "Reddit",
@@ -183,90 +173,44 @@
 						"icon": "mdi:reddit"
 					},
 					{
-						"name": "Polywork",
-						"url": "https://polywork.com",
-						"icon": "simple-icons:polywork"
+						"name": "Twitter",
+						"url": "https://twitter.com",
+						"icon": "mdi:twitter"
+					},
+					{
+						"name": "Facebook",
+						"url": "https://facebook.com/",
+						"icon": "mdi:facebook"
 					}
+					
 				]
 			},
 			{
-				"title": "Gaming",
-				"color": "red",
-				"align": "left",
-				"links": [
-					{
-						"name": "Polygon",
-						"url": "https://polygon.com",
-						"icon": "uil:polygon"
-					},
-					{
-						"name": "IGN",
-						"url": "https://ign.com",
-						"icon": "mdi:currency-sign"
-					},
-					{
-						"name": "RPS",
-						"url": "https://rockpapershotgun.com/",
-						"icon": "ph:toilet-paper-bold"
-					},
-					{
-						"name": "80lv",
-						"url": "https://80.lv/",
-						"icon": "tabler:hand-rock"
-					}
-				]
-			},
-			{
-				"title": "Science",
+				"title": "Twitch",
 				"color": "blue",
 				"align": "left",
 				"links": [
 					{
-						"name": "PopSci",
-						"url": "https://popsci.com/",
-						"icon": "material-symbols:science"
-					},
-					{
-						"name": "Space",
-						"url": "fa6-solid:user-astronaut",
-						"icon": "mdi:reddit"
-					},
-					{
-						"name": "NASA",
-						"url": "https://blogs.nasa.gov/",
-						"icon": "simple-icons:nasa"
-					},
-					{
-						"name": "ESA",
-						"url": "https://blogs.esa.int/",
-						"icon": "mdi:black-mesa"
+						"name": "AlexElCapo",
+						"url": "https://www.twitch.tv/alexelcapo/",
+						"icon": "mdi:twitch"
 					}
 				]
 			},
 			{
-				"title": "Tech",
+				"title": "Youtube",
 				"color": "yellow",
 				"align": "left",
 				"links": [
 					{
-						"name": "TechCrunch",
-						"url": "https://techcrunch.com/",
-						"icon": "game-icons:techno-heart"
+						"name": "Youtube",
+						"url": "https://www.youtube.com/",
+						"icon": "mdi:youtube"
 					},
 					{
-						"name": "Verge",
-						"url": "https://www.theverge.com/",
-						"icon": "arcticons:verge"
-					},
-					{
-						"name": "It's Foss",
-						"url": "https://itsfoss.com/",
-						"icon": "ri:mastodon-fill"
-					},
-					{
-						"name": "9To5 Linux",
-						"url": "https://9to5linux.com/",
-						"icon": "uil:linux"
+						"name": "Lofi Girl",
+						"url": "https://www.youtube.com/watch?v=jfKfPfyJRdk",
+						"icon": "mdi:music"
 					}
 				]
 			}
